@@ -6,6 +6,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .html {
+    overflow-x: hidden;
+  }
   .home-section .home-text,
   .home-section .home-img {
     text-align: center;
@@ -19,6 +22,10 @@
     margin: 0;
   }
   .home-img {
+    display: none;
+  }
+
+  a.mobile {
     display: none;
   }
   .home-section .full-screen {
@@ -89,12 +96,10 @@
     color: var(--text-black-600);
   } */
 
-  .about-section .skills .skill-item {
-    flex: 0 0 90%;
-    height: 100px;
-    max-width: 90%;
-    /* padding: 0 15px; */
-    margin: 0 auto;
+  .about-section .skill-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-bottom: 7%;
   }
 
   .about-section .timeline .timeline-item:nth-child(odd) {
@@ -132,8 +137,21 @@
   }
   .section .service-item {
     flex: 0 0 100%;
+    max-width: 90%;
+  }
+
+  .about-section .about-item-inner {
+    padding: 80px 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .about-section .about-item {
+    flex: 0 0 100%;
     max-width: 100%;
   }
+
   .service-section .service-item-inner {
     padding: 50px 15px;
     border-radius: 5px;
@@ -148,9 +166,13 @@
     max-width: 90%;
   }
   .slideshow-container {
-    max-width: 90%;
+    max-width: 80%;
     position: relative;
     margin: auto;
+  }
+
+  .about-section .about-tabs {
+    max-width: 90%;
   }
 
   .contact-section .contact-item {
@@ -165,5 +187,8 @@
   .btn-2 {
     width: 90%;
     margin-right: 5%;
+  }
+  .portfolio-items {
+    width: 90%;
   }
 }
