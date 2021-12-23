@@ -470,6 +470,21 @@ img {
     max-width: 50%;
     padding: 0 15px;
   }
+  .about-section .container {
+    max-width: 80%;
+    margin: auto;
+  }
+  .service-section .container {
+    max-width: 80%;
+    margin: auto;
+  }
+  .testimonial-section .container {
+    max-width: 80%;
+    margin: auto;
+  }
+  .contact-section .container {
+    max-width: 70%;
+  }
 }
 
 .home-section .home-text p {
